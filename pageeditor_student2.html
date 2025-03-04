@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+  .p1{
+    color: rgb(238, 234, 234); 
+    opacity: 10; 
+    font-weight: bold; 
+    font-style: italic; 
+    text-align: center;
+  } 
+  .p2{
+    color: rgba(241, 242, 237, 0.603); 
+    font-family: "Roboto", sans-serif;
+    font-size: 17px; 
+    font-weight: 600; 
+    font-style: normal; 
+    text-align: justify ;
+  } 
+  hr{
+    opacity: 0.3; 
+    width: 300px; 
+    text-align: center; 
+  }
+  .div1{
+    position: absolute; 
+    width: 600px; 
+    height: 900px; 
+    z-index: 999; 
+    margin-top: -750px; 
+    margin-left: 450px; 
+    border-radius: 50px; 
+  } 
+  a{
+    text-decoration: none; 
+    color: white; 
+  } 
+  a:hover{ 
+    color: red; 
+  }
+  body{
+    font-family: arial,sans-serif;
+} 
+  </style>
+  </head>
+<body> 
+    <div id="top"> 
+      <img src="bg.jpg" alt="background" style="width: 1519px; height: 1100px; margin-left: -8px; margin-top: -10px; margin-bottom: -300px; "> 
+      <div class="divfirst">  
+      <hr> 
+      <!--div that specifies the contribution that I have done-->
+      <p class="p1">Name: Krithiga</p>
+      <p class="p1">Role: Student 2<br>
+      The following pages were edited by me!</p>
+      <hr> 
+      <div class="div1" style="margin-top: 20px; width: 400px; background-color: rgba(255,255,255,0); margin-left: 100px;">
+      <p class="p1" style="font-size: 19px; font-style: normal; font-weight: 200"> Home page</p> 
+      <p class="p2"> Created a homepage that greets users with a video. Used javascript and css for producing hover effects and adding active class to navigation bar. 
+        We also created a logo that uniquely identifies our website. I also used additional javascript for changing navigation bar colour when the user starts scrolling. 
+      </p> 
+      <p class="p2" style="text-align: center; font-weight: 200; font-style: italic;"> <a href="home.html" target="_blank">Click this to go to the home page</a></p>
+      <p class="p1" style="font-size: 19px; font-style: normal; font-weight: 200">Feedback form</p> 
+      <p class="p2"> Created a feedback form that opens in a new window. Used javascript to make sure that 
+        mandatory fields are filled and if not it will display a red asterick mark beside the field that was not filled. Also,
+        users can also preview their form which opens onto a new tab and automatically when submitted. And after submitting it will display a submitted message and email the form contents to a valid email. </p>
+    <p class="p2" style="text-align: center; font-weight: 200; font-style: italic;"> <a href="feedback.html" target="_blank">Click this to go to the feedback page</a></p> 
+      <p class="p1" style="font-size: 19px; font-style: normal; font-weight: 200">Content page</p> 
+      <p class="p2">And lastly, we created our own content pages. Under my own content page the same navigation bar styling was used. And also embedded a video 
+        to indicate the suffering of marine animals. Relevant links were included in the content pages to go back to the top and a navigation bar 
+        was used to go back to various parts of the entire content page.</p>
+        <p class="p2" style="text-align: center; font-weight: 200; font-style: italic;"> <a href="contentpage_student2.html" target="_blank">Click this to go my content page</a></p>
+      <p class="p2" style="text-align: center; font-weight: 200; font-style: italic;"> <a href="#top">Top </a></p> 
+
+      </div>
+      </div> 
+      
+    <div class="editcontainer" id="container"> </div>
+    </div> 
+    <script>
+
+    //Drops bubbles at random speed 
+    function randomSpeed(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+    
+      // Number of smallbubbles to be created 
+      var numDroplets = 200; 
+    
+      // Generate smallbubbles dynamically
+      var container = document.getElementById("container");
+      for (var i = 0; i < numDroplets; i++) {
+        var droplet = document.createElement("div");
+        droplet.classList.add("smallbubble");
+        
+        //dcelarin the range for random speed 
+        droplet.style.animationDuration = randomSpeed(5, 7) + "s"; 
+        
+        droplet.style.left = Math.random() * 1500 + "px"; // Random horizontal position within the container 
+        
+        container.appendChild(droplet);
+      }
+      //Sam thing is repeated for bigger bubbles 
+      var numDropletflake = 10; 
+      var container = document.getElementById("container");
+      for (var i = 0; i < numDropletflake; i++) { 
+        var dropletflake = document.createElement("div");
+        dropletflake.classList.add("bigbubble");
+        dropletflake.style.animationDuration = randomSpeed(5,7) + "s";
+        dropletflake.style.left = Math.random() * 1500 + "px"; 
+        container.appendChild(dropletflake);
+      } 
+    </script> 
+</body> 
+</html>

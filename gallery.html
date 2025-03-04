@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <title>AquaTrove</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arya:wght@400;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Italiana&family=Ovo&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+}
+.bcontainer{
+    z-index: -1; 
+    width: 100%;
+    height: 100vh;
+    background-image: url(AdobeStock_651312275.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: fixed; /* To position the overlay */
+    overflow: auto;
+}
+label{
+    color: #fff;
+}
+.boverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) to change darkness */
+    overflow: auto;
+}
+.brow3{
+    margin-left: 100px;
+    display: flex;
+    height: 75%;
+    align-items: center;
+}
+.brow4{
+    margin-top: -100px;
+    margin-left: 100px;
+    display: flex;
+    height: 10%;
+}
+.bcol3{
+    flex-basis: 50%;
+}
+.bgap{
+    margin-top: 200px;
+}
+h1{
+    font-size: 80px;
+    color: #fff;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 1s ease-in-out;
+}
+.card1{
+    background-image: url(photo1.jpeg);
+}
+.card2{
+    background-image: url(photo2.jpeg);
+}
+.card3{
+    background-image: url(photo3.jpeg);
+}
+.card4{
+    background-image: url(photo4.jpeg);
+}
+.card5{
+    background-image: url(photo5.jpeg);
+}
+.card6{
+    background-image: url(photo6.jpeg);
+}
+.card7{
+    background-image: url(photo7.jpeg);
+}
+.card:hover{
+    transform: translateY(-20px)
+}
+.forcard1{
+    height: 80%;
+    width: 80%;
+    margin: 0;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: absolute;
+    display: flex;
+    z-index: 9;
+    background-color: darkblue;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 25px;
+}
+.forcard2{
+    font-size: 25px;
+    height: 80%;
+    width: 80%;
+    margin: 0;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: absolute;
+    display: flex;
+    z-index: 9;
+    background-color: blue;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.forcard3{
+    font-size: 25px;
+    height: 80%;
+    width: 80%;
+    margin: 0;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: absolute;
+    display: flex;
+    z-index: 9;
+    background-color: blue;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.forcard4{
+    font-size: 25px;
+    height: 80%;
+    width: 80%;
+    margin: 0;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: absolute;
+    display: flex;
+    z-index: 9;
+    background-color: blue;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.forcard5{
+    font-size: 25px;
+    height: 80%;
+    width: 80%;
+    margin: 0;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: absolute;
+    display: flex;
+    z-index: 9;
+    background-color: blue;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.forcard6{
+    font-size: 25px;
+    height: 80%;
+    width: 80%;
+    margin: 0;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: absolute;
+    display: flex;
+    z-index: 9;
+    background-color: blue;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.forcard7{
+    font-size: 25px;
+    height: 80%;
+    width: 80%;
+    margin: 0;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: absolute;
+    display: flex;
+    z-index: 9;
+    background-color: blue;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.bimage{
+    padding-left: 30px;
+}
+.bimage img{
+    display: inline;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+    
+    z-index: 10;
+    justify-content: center;
+}
+.bdescription{
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 200px;
+}
+.bdescription p{
+    color: #fff;
+}
+.crossbutton img{
+    height: 50px;
+    width: 50px;
+    padding-bottom: 500px;
+    padding-left: 50px;
+}
+    </style>
+
+</head>
+<body>
+    
+    <div class="forcard1" id="forcard1">
+        <div class="bimage">
+            <img src="photo1.jpeg" alt="">
+        </div>
+        <div class="bdescription"><p>This image contains a shot that is taken from the bottom of the sea facing upwards which captures a stunning view of the sharks.</p></div>
+        <div class="crossbutton" onclick="cross1()">
+            <img src="cross.webp" alt="">
+        </div> 
+    </div>
+    <div class="forcard2" id="forcard2">
+        <div class="bimage">
+            <img src="photo2.jpeg" alt="">
+        </div>
+        <div class="bdescription"><p>This is how plastic bottles pollute our oceans.</p></div>
+        <div class="crossbutton" onclick="cross2()">
+            <img src="cross.webp" alt="">
+        </div>
+    </div>
+    <div class="forcard3" id="forcard3">
+        <div class="bimage">
+            <img src="photo3.jpeg" alt="">
+        </div>
+        <div class="bdescription"><p>This image shows how turtles get caught up in plastic bags.</p></div>
+        <div class="crossbutton" onclick="cross3()">
+            <img src="cross.webp" alt="">
+        </div>
+    </div>
+    <div class="forcard4" id="forcard4">
+        <div class="bimage">
+            <img src="photo4.jpeg" alt="">
+        </div>
+        <div class="bdescription"><p>This stunning shot contains an underwater view, Where a ray of sunlight strikes the bottom of a river</p></div>
+        <div class="crossbutton" onclick="cross4()">
+            <img src="cross.webp" alt="">
+        </div>
+    </div>
+    <div class="forcard5" id="forcard5">
+        <div class="bimage">
+            <img src="photo5.jpeg" alt="">
+        </div>
+        <div class="bdescription"><p>This image consists of colorfull fish that swims under water</p></div>
+        <div class="crossbutton" onclick="cross5()">
+            <img src="cross.webp" alt="">
+        </div>
+    </div>
+    <div class="forcard6" id="forcard6">
+        <div class="bimage">
+            <img src="photo6.jpeg" alt="">
+        </div>
+        <div class="bdescription"><p>A view of white colored fish with orange spots is observed here.</p></div>
+        <div class="crossbutton" onclick="cross6()">
+            <img src="cross.webp" alt="">
+        </div>
+    </div>
+    <div class="forcard7" id="forcard7">
+        <div class="bimage">
+            <img src="photo7.jpeg" alt="">
+        </div>
+        <div class="bdescription"><p>An underwater view of corals is seen here</p></div>
+        <div class="crossbutton" onclick="cross7()">
+            <img src="cross.webp" alt="">
+        </div>
+    </div>
+    <div class="bcontainer">
+        <div class="boverlay">
+            <!-- For navbar -->
+            <header id="header">  
+                <div>
+                <nav class="homenavul homenav"> 
+                    <ul class="homeli homenavul"> 
+                        <li class="golefft homeli"><a href="home.html#home" class="homea">Home</a></li> 
+                        <li class="homeli"><a href="gallery.html" class="homea">Gallery</a></li> 
+                        <li class="homeli"><a href="shop.html" class="homea">Shop</a></li>
+                        <li class="homeli"><a href="userprofile.html" class="homea">User Profile</a></li> 
+                        <li><img class="logo" src="logo.png" alt="logo"> </li>
+                        <li class="goleft homeli"><a href="feedback.html" class="homea">Feedback</a></li>
+                        <li class="homeli"><a href="sitemap.html" class="homea">Sitemap</a></li> 
+                        <li class="homeli"><a href="team.html" class="homea">Team</a></li> 
+                    </ul>
+                </nav> 
+            </div> 
+            </header> 
+    <!-- navbar end -->
+            <div class="brow3">
+                <div class="bcol3">
+                    <h1>Gallery</h1>
+                    <div class="colorchanger">
+                    <label for="fontSelector">Select font</label>
+                    <select id="fontSelector" style="margin-left: 0px;">
+                        <option value="Aboreto">Aboreto</option>
+                        <option value="Changa One">Changa One</option>
+                        <option value="Cursive">Cursive</option>
+                        <option value="Brush Script MT">Brush Script MT</option>
+                        
+                            
+                    </select>
+                    <br>
+                    <label for="colorSelector">Select Color</label>
+                    <select id="colorSelector" style="margin: 0px;">
+                        <option value="#800000">Maroon</option>
+                        <option value="#4B0082">Indigo</option>
+                        <option value="#8B0000">Dark Red</option>
+                        <option value="#191970">Midnight Blue</option>
+                        <option value="#800080">Purple</option>
+                            
+                    </select>
+                </div>
+                </div>
+                <div class="bcol3">
+                    <div class="card card1" id="img1" onclick="show1()">
+                    
+                    </div>
+                </div>
+                <div class="bcol3">
+                    <div class="card card2" id="img2" onclick="show2()">
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="bcol3">
+                    <div class="card card3" onclick="show3()">
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="brow4">
+                <div class="bcol3">
+                    <div class="card card4" onclick="show4()">
+
+                    </div>
+                </div>
+                <div class="bcol3">
+                    <div class="card card5" onclick="show5()">
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="bcol3">
+                    <div class="card card6" onclick="show6()">
+                        
+                    </div>
+                </div>
+                <div class="bcol3">
+                    <div class="card card7" onclick="show7()">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="bgap">
+
+            </div>
+            <!-- For footer -->
+    <div class="rectangle4" style="width: 1535px;"> 
+        <div class="kdiv6">
+            <ul class="footerli2" style="margin-top: -10px;">
+                <li class="footerli2" ><div class="kcircle"><img src="facebook.svg" class="imgsvg" alt="facebook"></div></li>
+			    <li class="footerli2" ><div class="kcircle"><img src="linkedin.svg" class="imgsvg" alt="linkedin"></div></li>
+			    <li class="footerli2" ><div class="kcircle"><img src="instagram.svg" class="imgsvg" alt="instagram"></div></li>
+                
+            </ul>
+        </div>
+        <div class="kdiv4">
+            <ul class="footerli" style="margin-top: -20px; margin-left: 10px;">
+                <li class="footerli"><a href="home.html#home" class="footera">Home</a></li>
+                <li class="footerli"><a href="gallery.html" class="footera">Gallery</a></li>
+                <li class="footerli"><a href="shop.html" class="footera">Shop</a></li>
+                <li class="footerli"><a href="userprofile.html" class="footera">User profile</a></li>
+                <li class="footerli"><a href="feedback.html" class="footera">Feedback</a></li>
+                <li class="footerli"><a href="sitemap.html" class="footera">Sitemap</a></li>
+                <li class="footerli"><a href="team.html" class="footera">Team</a></li>
+            </ul>
+        </div> 
+        <div class="kdiv5">
+            <ul class="footerli3" style="margin-top: -20px; margin-left: 10px;">
+                <li class="footerli3"><a href="pageeditor_student1.html" class="editora" target="_blank">Student 1</a><li class="kborder"></li>
+			    <li class="footerli3"><a href="pageeditor_student2.html" class="editora" target="_blank">Student 2</a><li class="kborder"></li>
+			    <li class="footerli3"><a href="pageeditor_student3.html" class="editora" target="_blank">Student 3</a><li class="kborder"></li>
+			    <li class="footerli3"><a href="pageeditor_student4.html" class="editora" target="_blank">Student 4</a></li>
+            </ul> 
+              
+        </div> 
+        <div class="kdiv7" style="width: 1530px;"> 
+            <p class="kp1"> If you think the ocean isn't important imagine earth without it.</p> 
+            <p class="kp1" style="font-size: 18px; opacity: 0.6; margin-top: -10px;"> Visit our website for more information</p>
+            
+    
+        </div> 
+    </div>
+    <!-- footer end -->
+        </div>
+    </div>
+    
+
+    <script> 
+    //navigation bar changing colour when user starts scrollling 
+	var lastscroll=0; 
+	window.addEventListener('scroll',function (){
+		var scrollpos = window.scrollY; 
+		if(scrollpos>100){ 
+			var color="blue"  //blue colour when moving   
+		}else{
+			var color="rgba(255,255,255,0)" //transparent colour when going back 
+		}
+		lastscroll= scrollpos <= 0 ? 0 : scrollpos; //setting where last scroll position was 
+		document.getElementById('header').style.backgroundColor=color; //setting color 
+	}) 
+
+	//making active class work when clicking on link
+	document.addEventListener('DOMContentLoaded', function() { //when window loads above functions are called 
+  	setactive();
+  	setactiveurl();
+	});
+	
+	function setactive() {
+  		var links = document.querySelectorAll('nav ul li a'); //decalring all navigation bar links in array 
+  		links.forEach(function(link) {
+    		link.addEventListener('click', function() { //Listens for click event 
+      			links.forEach(function(link) {
+        			link.classList.remove('active'); //remove active class from links that doesn't have click 
+      			});
+      			this.classList.add('active'); //adding active class for the link that has been clicked 
+    		});
+  		});
+	}
+
+	//making sure that the active link stays without disappearing 
+	function setactiveurl() {
+  		var currentloc = window.location.href;
+  		var links = document.querySelectorAll('nav ul li a');
+  		links.forEach(function(link) {
+    		if (link.href === currentloc) {
+      			link.classList.add('active');
+    		}
+  		});
+	}
+
+
+
+        function show1(){
+            var shower = document.getElementById("forcard1");
+            shower.style.visibility='visible';
+        }
+        function show2(){
+            var shower = document.getElementById("forcard2");
+            shower.style.visibility='visible';
+        }
+        function show3(){
+            var shower = document.getElementById("forcard3");
+            shower.style.visibility='visible';
+        }
+        function show4(){
+            var shower = document.getElementById("forcard4");
+            shower.style.visibility='visible';
+        }
+        function show5(){
+            var shower = document.getElementById("forcard5");
+            shower.style.visibility='visible';
+        }
+        function show6(){
+            var shower = document.getElementById("forcard6");
+            shower.style.visibility='visible';
+        }
+        function show7(){
+            var shower = document.getElementById("forcard7");
+            shower.style.visibility='visible';
+        }
+    
+        function cross1(){
+            var shower = document.getElementById("forcard1");
+            shower.style.visibility='hidden';
+        }
+        function cross2(){
+            var shower = document.getElementById("forcard2");
+            shower.style.visibility='hidden';
+        }
+        function cross3(){
+            var shower = document.getElementById("forcard3");
+            shower.style.visibility='hidden';
+        }
+        function cross4(){
+            var shower = document.getElementById("forcard4");
+            shower.style.visibility='hidden';
+        }
+        function cross5(){
+            var shower = document.getElementById("forcard5");
+            shower.style.visibility='hidden';
+        }
+        function cross6(){
+            var shower = document.getElementById("forcard6");
+            shower.style.visibility='hidden';
+        }
+        function cross7(){
+            var shower = document.getElementById("forcard7");
+            shower.style.visibility='hidden';
+        }
+    // For styles
+    function applyStyles() {
+        var font = document.getElementById("fontSelector").value;
+        var color = document.getElementById("colorSelector").value;
+
+        document.body.style.fontFamily = font;
+        var colorchange1 = document.getElementById("forcard1");
+        var colorchange2 = document.getElementById("forcard2");
+        var colorchange3 = document.getElementById("forcard3");
+        var colorchange4 = document.getElementById("forcard4");
+        var colorchange5 = document.getElementById("forcard5");
+        var colorchange6 = document.getElementById("forcard6");
+        var colorchange7 = document.getElementById("forcard7");
+        colorchange1.style.backgroundColor = color;
+        colorchange2.style.backgroundColor = color;
+        colorchange3.style.backgroundColor = color;
+        colorchange4.style.backgroundColor = color;
+        colorchange5.style.backgroundColor = color;
+        colorchange6.style.backgroundColor = color;
+        colorchange7.style.backgroundColor = color;
+    }
+
+    // Call applyStyles function when the selection changes
+    document.getElementById("fontSelector").addEventListener("change", applyStyles);
+    document.getElementById("colorSelector").addEventListener("change", applyStyles); 
+
+    
+    </script>
+</body>
+</html>

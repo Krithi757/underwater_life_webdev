@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic seas</title>
+    <!-- css for nav bar and footer -->
+    <link rel="stylesheet" href="style.css"> 
+    <!-- font for this page -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Shrikhand&display=swap" rel="stylesheet">
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arya:wght@400;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Italiana&family=Ovo&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .image-container {
+        position: relative;
+        width: 100%;
+        height: 15%;
+        
+        
+    }
+    .image-container::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10%; 
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(89, 122, 149)); /* White gradient to bottom */
+    }
+    .image-text {
+        font-family: "Bungee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 10em; /* Adjust the font size as needed */
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+        white-space: nowrap;
+    }
+    .image-text-2{
+        font-family: "Shrikhand", serif;
+        font-size: 3em;
+        font-weight: 400;
+        font-style: italic;
+        color: white;
+        top: 63%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+    .details-container {
+        background: linear-gradient(to bottom, rgba(46, 98, 124, 0.611), rgba(29, 88, 148, 0.842)); /* Transparent blue gradient */
+        color: white;
+        padding: 20px;
+        text-align: justify;
+        margin-top: -20px;
+        top: 69%;
+        
+    }
+    .text-1{
+        font-family: "Bungee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px; 
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+        white-space: nowrap;
+    }
+    .details-container p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        z-index: 999;
+        
+    }
+    
+    .flex-container {
+        z-index: 999;
+        display: flex;
+        background: linear-gradient(to right, rgba(98, 129, 142, 0.524), rgba(80, 125, 138, 0.368));
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        border-radius: 10px;
+        width: 85%;
+        margin: 0 auto;
+
+    }
+
+    .text-container {
+        flex: 1;
+        text-align: center;
+        margin-top: 40px;
+
+    }
+
+    .image-container-2 {
+        flex: 1;
+        margin-left: 50px;     }
+
+    .image-container-2 img {
+        width: 70%;
+        height: auto;
+    }
+    .text-2{
+        font-family: "Bungee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        transform: translate(-50%, -50%);
+        font-size: 30px; 
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+        white-space: nowrap;
+    }
+
+    .button {
+        font-family: "Bungee", sans-serif;
+        font-size: 20px;
+        width: 15%;
+        height: 8%;
+        padding: 10px 20px;
+        background-color: #eeb779;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+        left: 43%;
+        position: relative;
+        
+    }
+
+    .button:hover {
+        background-color: #c4b34b;
+    }
+    .rot{
+        display: flex;
+        justify-content: space-between;
+    }
+    .image-container-rot {
+        flex: 1;
+        margin-right: 0; 
+    }
+
+    .image-container-rot img {
+        width: 90%;
+        height: auto;
+        
+    }
+
+    
+
+    
+
+    </style>
+</head>
+<body>
+    <!-- NavBar -->
+    <header id="header" style="z-index: 999; background-color: hsla(210, 34%, 59%, 0.582);">   
+            <div>
+            <nav class="homenavul homenav"> 
+                <ul class="homeli homenavul"> 
+                    <li class="golefft homeli"><a href="home.html#home" class="homea">Home</a></li> 
+                    <li class="homeli"><a href="gallery.html" class="homea">Gallery</a></li> 
+                    <li class="homeli"><a href="shop.html" class="homea">Shop</a></li>
+                    <li class="homeli"><a href="userprofile.html" class="homea">User Profile</a></li> 
+                    <li><img class="logo" src="logo.png" alt="logo"> </li>
+                    <li class="goleft homeli"><a href="feedback.html" class="homea">Feedback</a></li>
+                    <li class="homeli"><a href="sitemap.html" class="homea">Sitemap</a></li> 
+                    <li class="homeli"><a href="team.html" class="homea">Team</a></li> 
+                </ul>
+            </nav> 
+        </div> 
+        </header> 
+
+    <!-- content -->
+    <div class="image-container">
+		<img src="Sea-Garbage.jpeg" alt="Plastic seas" style="width: 100%;">
+		<div class="image-text">Plastic &nbsp; seas</div>
+        <div class="image-text-2">~The Silent Invader</div>
+	</div>
+
+    <div class="details-container">
+        <div class="details">
+            <br><br>
+            <span class="text-1"> "Ocean Pollution"</span> <br>
+            <p>Ocean pollution is a significant environmental issue caused by the accumulation of harmful substances in the Earth's oceans.
+                 This pollution primarily stems from human activities such as industrial waste, agricultural runoff, oil spills, and plastic waste. 
+                 These pollutants can have devastating effects on marine life, leading to habitat destruction, loss of biodiversity, and even endangerment of species. 
+                 Additionally, ocean pollution poses risks to human health, as contaminants can enter the food chain through seafood consumption. 
+                 Addressing ocean pollution requires global cooperation and concerted efforts to reduce waste, improve waste management practices, and promote sustainable behaviors.
+            </p> <br> <br>
+
+            <span class="text-1"> "Plastic Pollution"</span> <br>
+            <p>One of the most pressing issues in ocean pollution is the prevalence of plastic waste. 
+                Millions of tons of plastic enter the oceans each year, harming marine life and ecosystems. 
+                This pollution comes from various sources, including single-use plastics, microplastics from cosmetics and clothing, and plastic debris from fishing and shipping industries.
+            </p>
+
+            <div class="flex-container">
+                <div class="text-container">
+                    <span class="text-2" > " Plastic Waste on the beaches"</span><br>
+                    <p>Plastic waste on beaches is a pressing environmental concern, with millions of tons of plastic debris washing ashore annually.
+                        This waste, originating from various sources like discarded packaging and fishing gear, poses serious threats to marine life through entanglement and ingestion.
+                    </p>
+                </div>
+                <div class="image-container-2">
+                    <img src="beach-garbage.jpeg" alt="Plastic Waste on Beaches">
+                </div>
+            </div>
+
+            <br>
+            <div class="flex-container">
+                <div class="text-container">
+                    <span class="text-2" > "  Impact on Sea Animals"</span><br>
+                    <p>Plastic waste poses a grave threat to marine life, as sea animals often mistake plastic debris for food or become entangled in it.
+                         This ingestion and entanglement can lead to injury, starvation, and even death. Additionally, chemicals from plastics can leach into the water, 
+                         affecting marine ecosystems.
+                    </p>
+                </div>
+                <div class="image-container-2">
+                    <img src="Plastic-animal.jpeg" alt="Plastic Waste on Beaches">
+                </div>
+            </div>
+            <br><br>
+
+            <span class="text-1"> "Chemical Pollution"</span> <br>
+            <p>Chemical pollution in the oceans is another major concern, 
+                resulting from industrial discharges, agricultural runoff, and oil spills. 
+                These chemicals can have toxic effects on marine organisms, disrupting ecosystems and threatening the health of marine species. 
+                Examples of chemical pollutants include heavy metals, pesticides, and oil-based products.
+            </p>
+
+            <div class="flex-container">
+                <div class="text-container">
+                    <span class="text-2" > " Industrial Chemical Waste Disposal"</span><br>
+                    <p>Some factories dispose of chemical waste directly into the sea using pipes, leading to severe environmental consequences.
+                         This irresponsible practice introduces toxic substances into marine ecosystems, harming aquatic life and disrupting fragile underwater habitats.
+                         
+                    </p>
+                </div>
+                <div class="image-container-2">
+                    <img src="Chemical.jpeg" alt="Plastic Waste on Beaches">
+                </div>
+            </div>
+            <br><br><br><br>
+
+            <span class="text-1"> "Preventing sea Pollution"</span> <br>
+            <p>Preventing ocean pollution requires collective action and sustainable practices. 
+                Individuals can reduce plastic waste by using reusable items, recycling, and properly disposing of trash. 
+                Industries can adopt cleaner production methods and treat wastewater before releasing it into the ocean. 
+                Governments can enforce regulations to limit pollution and protect marine environments. 
+                By working together, we can reduce pollution and preserve the health of our oceans for future generations.
+            </p>
+            <br>
+            <span class="text-1"> "Importance of Ocean Cleaning"</span> <br>
+            <p> Cleaning the ocean is crucial for protecting marine life, preserving ecosystem health, and ensuring human well-being.
+                 Pollution poses significant threats to marine animals, habitats, and biodiversity, with plastic waste, chemicals, 
+                 and other debris causing harm to marine life through ingestion and entanglement. 
+                 By removing pollutants from the ocean, we can help mitigate these impacts, promote ecosystem balance, and safeguard human health.
+                  Additionally, clean oceans support industries such as tourism and fisheries, contributing to economic stability. Ultimately, 
+                  ocean cleaning is essential for maintaining healthy ecosystems, supporting biodiversity, and preserving the Earth's natural resources for future generations.
+            </p>
+
+            <div class="flex-container">
+                <div class="text-container">
+                    <span class="text-2" > " Beach cleanups"</span><br>
+                    <p>Beach cleanups are community-led efforts where volunteers gather to remove trash and debris from shorelines. 
+                        These events are essential for maintaining clean and safe beaches, protecting marine life, and preserving coastal ecosystems.
+                    </p>
+                </div>
+                <div class="image-container-2">
+                    <img src="beach-cleanup.jpeg" alt="Plastic Waste on Beaches">
+                </div>
+            </div>
+
+            <br>
+            <div class="flex-container">
+                <div class="text-container">
+                    <span class="text-2" > "  Underwater Cleanups"</span><br>
+                    <p>Underwater cleanups involve divers and teams removing debris from the ocean floor, helping protect marine life and habitats from pollution. 
+                        These efforts are critical for preserving underwater ecosystems and maintaining a healthy balance in marine environments.
+                    </p>
+                </div>
+                <div class="image-container-2">
+                    <img src="underwater.jpeg" alt="Plastic Waste on Beaches">
+                </div>
+            </div>
+            <br><br>
+
+            <div class="flex-container">
+                <div class="text-container">
+                    <span class="text-2" > " Boat-Based Cleanups"</span><br>
+                    <p>Boat-based cleanups involve teams using boats to collect floating debris and waste from the ocean's surface, targeting areas where waste accumulates due to ocean currents.
+                         These efforts help prevent marine life entanglement and ingestion of floating debris, contributing to cleaner and safer oceans.
+                         
+                    </p>
+                </div>
+                <div class="image-container-2">
+                    <img src="boat-based.jpeg" alt="Plastic Waste on Beaches" style="width: 70%;">
+                </div>
+            </div>
+            <br><br><br><br>
+
+            <span class="text-1"> "iit rotaract Beach cleanup project"</span> <br>
+            <p>Rotaract club of IIT organized a beach cleanup on March 24th, 2023, a beach cleanup was organized and successfully completed at Colombo 15 Modara Beach.
+                 Volunteers gathered to remove trash and debris from the shoreline, contributing to the cleanliness and preservation of the beach and surrounding marine ecosystem.
+            </p>
+            
+            <div class="rot">
+                <div class="image-container-rot">
+                    <img src="rot-1.JPG" alt="Plastic Waste on Beaches">
+                </div>
+                <div class="image-container-rot">
+                    <img src="rot-2.JPG" alt="Plastic Waste on Beaches">
+                </div>
+                <div class="image-container-rot">
+                    <img src="rot-3.JPG" alt="Plastic Waste on Beaches">
+                </div>
+            </div>
+            <br><br><br>
+
+            <span class="text-1"> "Important...! "</span> <br>
+            <p>When cleaning the ocean, it's crucial to prioritize safety by providing volunteers with proper gear and training. 
+                Organizing the cleanup effectively, including choosing the right location and coordinating volunteers, ensures a smooth operation. 
+                Educating participants about ocean pollution and the importance of conservation can inspire lasting change. Collecting data on the 
+                types of waste collected helps identify sources of pollution and inform future cleanup efforts. 
+                Promoting sustainability during the cleanup and encouraging ongoing efforts to reduce plastic use are also key. 
+                Engaging the local community fosters a sense of ownership and responsibility for the marine environment, ensuring a lasting impact beyond the cleanup event.
+            </p>
+
+            <div class="flex-container">
+                <div class="text-container">
+                    <span class="text-2" > " world ocean cleaning day "</span><br>
+                    <p>World Ocean Cleaning Day, observed on the <b>third Saturday of September each year </b>, is a global initiative dedicated to raising awareness about ocean pollution and promoting efforts to clean up marine environments. 
+                        This day brings together individuals, communities, organizations, and governments worldwide to participate in beach cleanups, underwater cleanups, and other activities aimed at removing trash and debris from oceans and coastlines.
+                    </p>
+                </div>
+                <div class="image-container-2">
+                    <img src="ocean-day.jpg" alt="Plastic Waste on Beaches">
+                </div>
+            </div>
+            <br><br>
+            <span class="text-1"> "Plastic Waste Dumping into Oceans"</span> <br>
+            <p>Several countries around the world contribute significantly to marine pollution by dumping plastic waste into oceans.
+                 These countries often lack proper waste management infrastructure, leading to the improper disposal of plastic waste.
+                  Rivers serve as pathways for plastic waste to reach the oceans, exacerbating the problem.
+            </p>
+            <br>
+            
+
+            <div class="flex-container">
+                <div class="text-container">
+                    <span class="text-2" > " Top countries "</span><br>
+                    <p>Some of the major contributors to marine plastic pollution include China, Indonesia, the Philippines, Thailand, Vietnam, Nigeria, and Egypt.
+                        These countries face challenges in managing their plastic waste, leading to environmental degradation and harm to marine life.
+                        See more on: <br>
+                        <a href="https://www.statista.com/chart/12211/the-countries-polluting-the-oceans-the-most/" style="text-decoration: none; color: lightblue;">www.statista.com/the-countries-polluting-the-oceans-the-most/</a>
+                    </p>
+                </div>
+                <div class="image-container-2">
+                    <img src="10-countries.png" alt="Plastic Waste on Beaches">
+                </div>
+            </div>
+            
+        </div>  
+    </div>
+
+    <!-- footer -->
+        <div class="rectangle4" style="width: 1528px; margin-top: 0;"> 
+            <div class="kdiv6" style="margin-left: 740px;">
+                <ul class="footerli2" style="margin-top: -10px;" >
+                    <li class="footerli2" ><div class="kcircle"><img src="facebook.svg" class="imgsvg" alt="facebook"></div></li>
+                    <li class="footerli2" ><div class="kcircle"><img src="linkedin.svg" class="imgsvg" alt="linkedin"></div></li>
+                    <li class="footerli2" ><div class="kcircle"><img src="instagram.svg" class="imgsvg" alt="instagram"></div></li>
+                    
+                </ul>
+            </div>
+            <div class="kdiv4" style="margin-left: 500px;">
+                <ul class="footerli" style="margin-top: -20px; margin-left: 10px;">
+                    <li class="footerli"><a href="home.html#home" class="footera">Home</a></li> 
+			    <li class="footerli"><a href="gallery.html" class="footera">Gallery</a></li>
+			    <li class="footerli"><a href="shop.html" class="footera">Shop</a></li>
+			    <li class="footerli"><a href="userprofile.html" class="footera">User profile</a></li>
+			    <li class="footerli"><a href="feedback.html" class="footera">Feedback</a></li>
+			    <li class="footerli"><a href="sitemap.html" class="footera">Sitemap</a></li>
+			    <li class="footerli"><a href="team.html" class="footera">Team</a></li> 
+                </ul>
+            </div> 
+            <div class="kdiv5" style="margin-left: 600px;">
+                <ul class="footerli3" style="margin-top: -20px; margin-left: 10px;">
+                    <li class="footerli3"><a href="pageeditor_student1.html" class="editora" target="_blank">Student 1</a><li class="kborder"></li>
+			        <li class="footerli3"><a href="pageeditor_student2.html" class="editora" target="_blank">Student 2</a><li class="kborder"></li>
+			        <li class="footerli3"><a href="pageeditor_student3.html" class="editora" target="_blank">Student 3</a><li class="kborder"></li>
+			        <li class="footerli3"><a href="pageeditor_student4.html" class="editora" target="_blank">Student 4</a></li>
+                    </ul>
+                  
+            </div> 
+            <div class="kdiv7" style="width: 1521px;"> 
+                <p class="kp1"> If you think the ocean isn't important imagine earth without it.</p> 
+                <p class="kp1" style="font-size: 18px; opacity: 0.6; margin-top: -10px;"> Visit our website for more information</p>
+                
+        
+            </div> 
+        </div> 
+
+
+
+    
+
+
+    
+
+
+    
+</body>
+</html>

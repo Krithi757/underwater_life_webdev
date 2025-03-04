@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaTrove</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300&display=swap" rel="stylesheet">
+    <style>
+        .container{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.LOGO {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.bgvideo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    overflow: hidden; /* hides the content that exceeds the dimensions */
+}
+
+.splash {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;;
+}
+
+.logo-header {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.logo {
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.mission {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.description {
+    font-size: 18px; /* Modify font size */
+    line-height: 1.5; /* Modify line height */
+}
+
+.group {
+    text-align: center;
+    color: white;
+    font-weight: bold; 
+    font-size: 16px;
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin-bottom: 5px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); 
+    } 100% {
+transform: rotate(1800deg); 
+    }
+} 
+
+.loading{
+    animation: rotate 7s ease-out 2s forwards;  
+    width: 150px; 
+    height: auto;
+    margin-bottom: 80px;
+} 
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="splash">
+        <img src="logo.png" alt="LOGO" class="LOGO">
+        <h1 class="logo-header">
+            <span class="logo">Welcome To </span> <span class="logo"> Aqua</span><span class="logo">Trove</span>
+        </h1>
+        <div class="mission">
+            <p class = "description">Here at AquaTrove, we are deeply committed to the protection and conservation of our planet's most precious resource – the ocean. Our mission is to inspire global action to protect marine ecosystems, promote sustainability, and preserve Earth's biodiversity.</p>
+            <p class = "group">Group Members: Buddila, Minindu, Krithiga, Gihansa</p>
+        </div>
+        <img src="loading.png" alt="loading" class="loading">
+        <video autoplay loop muted plays-inline class="bgvideo" preload="auto">
+            <source src="background-video.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<script>
+    let splash = document.querySelector('.splash');
+let logoSpan = document.querySelectorAll('.logo');
+let loader = document.querySelector('.loading');
+
+window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        logoSpan.forEach((span, idx) => {
+            setTimeout(() => {
+                span.style.opacity = '1';
+                span.style.transform = 'translateY(0)';
+            }, (idx + 1) * 400);
+        });
+
+        setTimeout(() => {
+            splash.querySelector('.mission').style.opacity = '1';
+            loader.style.display = 'block'; // Show loader
+        }, 2000);
+
+         setTimeout(() => {
+             window.location.href = "home.html"; // Redirect after 4 seconds
+         }, 4000);
+
+        setTimeout(()=>{
+            logoSpan.forEach((span, idx)=>{
+
+                setTimeout(()=>{
+                    span.classList.remove('active');
+                    span.classList.add('fade');
+            
+                }, (idx + 1) * 50)
+            })
+        },1500);
+        
+        setTimeout(()=>{
+            splash.style.transform = 'translateY(-100%)'; // Slide up effect
+            splash.style.transition = 'transform 1.5s ease-in-out'; 
+        }, 4500); 
+    });
+});
+
+</script>
+</body>
+</html>

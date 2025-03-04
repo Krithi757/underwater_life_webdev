@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddila's content page</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .leftbgimg{
+        width: 100%;
+        height: 100vh;
+        background-image: url(AdobeStock_354886079.jpeg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        position: fixed; /* To position the overlay */
+        overflow: auto;
+    }
+    .overlayforbgimg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3); /* Adjust the last value (0.5) to change darkness */
+        overflow: auto;
+    }
+    .contentDescription{
+        width: 600px;
+        height: 600px;
+        background-color: lightblue;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        justify-content: center;
+        position: absolute;
+        border: 2px solid black;
+        border-radius: 25px;
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        opacity: 90%;
+        text-align: left;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .line1{
+        
+        
+    }
+    .Topics{
+        padding-top: 10px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-size: large;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .mainTopic{
+        font-size: 40px;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class="leftbgimg">
+        <div class="overlayforbgimg">
+            <div class="contentDescription">
+                <div class="mainTopic">
+                    Page Editor
+                </div>
+                <p class="line1">Name : Buddila Ruwanpathirana <br>
+                Role : Student 4<br>
+            Tasks Completed by me are as follows<br></p>
+                <div class="Topics">Gallery Page</div>
+                <p class="line2"> By using html, css and Javascript i created the Gallery page. When you hover over 
+                    the images it indicates a size differance which encourages the user to click it. Apon click the 
+                    user gets more details about the picture and when the cancel button is clicked program goes into 
+                    the main screen. A font selector and a background color selector is also present inside the 
+                    gallery page</p>
+                    <a href="gallery.html">click here to enter gallery page</a>
+                    <div class="Topics">Sitemap</div>
+                <p class="line2">The sitemap was created by using svg instructions that were provided. The site was alighned to
+                    the center of the screen so that the x and y co-ordinates are easier to calculate when creating rectangles, 
+                    text and polylines. When hovering over the rectangle it invites the user to click it</p>
+                    <a href="sitemap.html">Click here to enter sitemap</a>
+                <div class="Topics">Content Page</div>
+                <p class="line2">Me and my team created 4 content pages individually which i wrote about how water pollution effects
+                    our future. I used html and css for this.</p>
+                    <a href="contentpage_student4">click here to enter content page</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

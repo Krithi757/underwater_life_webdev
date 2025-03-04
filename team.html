@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUR TEAM</title>
+    <!-- css for nav bar and footer -->
+    <link rel="stylesheet" href="style.css"> 
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arya:wght@400;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Italiana&family=Ovo&display=swap" rel="stylesheet">
+
+    <!-- css part -->
+    <style>
+         body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: linear-gradient(to bottom, #2b8bec 14%, transparent 30%),
+                            url('bg-img.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .teamname {
+            font-size: 50px; 
+            color: wheat;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 900; /* Replace <weight> with the desired font weight */
+            font-style: normal;
+            margin-top: 5%;
+            position: absolute;
+            margin-left: 40%;
+        }
+        .txt1{
+            font-size: 30px; 
+            color: black;
+            font-family: "Montserrat", sans-serif;
+            font-style: italic;
+            margin-top: 8.7%;
+            position: absolute;
+            margin-left: 36%;
+        }
+
+        /* card-css */
+        .container {
+        position: relative;
+        width: 20%;
+        z-index: 990;
+        left: 5%;
+        top: 8%;
+        }
+        .container-2 {
+        position: relative;
+        width: 20%;
+        z-index: 990;
+        left: 8.5%;
+        top: 8%;
+        }
+
+        .container-3{
+        position: relative;
+        width: 20%;
+        z-index: 990;
+        left: 9.5%;
+        top: 8%;
+        }
+        .container-4 {
+        position: relative;
+        width: 20%;
+        z-index: 990;
+        left: 12%;
+        top: 8%;
+        }
+
+        .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        }
+
+        .overlay {
+        position: absolute;
+        bottom: 0px;
+        left: 25%;
+        right: 0;
+        background-color: #008CBA;
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: .5s ease;
+        }
+
+        .container:hover .overlay ,
+        .container-3:hover .overlay,
+        .container-4:hover .overlay{
+        width: 100%;
+        left: 0;
+        }
+
+        .container-2:hover .overlay{
+            width: 90%;
+            left: 0;
+        }
+
+        .text {
+        color: white;
+        font-size: 30px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        }
+        .card-container{
+            top: 23%;
+            display: flex;
+            position: relative;
+            z-index: 1; 
+            padding-top: 30px;
+            padding-bottom: 70px;
+            
+        }
+        .card-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(231, 223, 223, 0.368);
+            filter: blur(20px); 
+        }
+        .description{
+            font-family: "Montserrat", sans-serif;
+            color: wheat;
+            font-size: 50px;
+            padding: 40px;
+            font-weight: bolder;
+        }
+        
+    </style>
+    
+</head>
+<body>
+     <!-- NavBar -->
+     <header id="header" style="z-index: 999;">  
+		<div>
+		<nav class="homenavul homenav"> 
+			<ul class="homeli homenavul"> 
+				<li class="golefft homeli"><a href="home.html#home" class="homea">Home</a></li> 
+				<li class="homeli"><a href="gallery.html" class="homea">Gallery</a></li> 
+				<li class="homeli"><a href="shop.html" class="homea">Shop</a></li>
+				<li class="homeli"><a href="userprofile.html" class="homea">User Profile</a></li> 
+				<li><img class="logo" src="logo.png" alt="logo"> </li>
+				<li class="goleft homeli"><a href="feedback.html" class="homea">Feedback</a></li>
+				<li class="homeli"><a href="sitemap.html" class="homea">Sitemap</a></li> 
+				<li class="homeli"><a href="team.html" class="homea">Team</a></li> 
+			</ul>
+		</nav> 
+	</div> 
+	</header>
+
+    <!-- content -->
+    
+    <span class="teamname">OUR TEAM~</span>
+    <span class="txt1"> "Hover the image for more details."</span>
+
+    
+    <div class="card-container">
+        <!-- card1 -->
+        <div class="container">
+            <img src="Gihansa.jpg" alt="Avatar" class="image">
+            <span class="description">&nbsp;&nbsp;Gihansa</span>
+            <div class="overlay">
+              <div class="text">
+                <span style="font-size: 40px;">Gihansa <br> Sarathchandra</span> <br>
+                <span style="font-size: 20px;">Id- W20530918 | 20232296 </span><br>
+                <a href="mailto:gihansa.20232296@iit.ac.lk" style="font-size: 20px; text-decoration: none;">gihansa.20232296@iit.ac.lk</a> <br>
+                Role: Student 1 <br>
+                <span style="font-size: 20px;">Desingned and implement pages:</span><br>
+                Splash screen | shop
+
+              </div>
+            </div>
+        </div>
+        
+        <!-- card2 -->
+        <div class="container-2">
+            <img src="Krithiga.JPG" alt="Avatar" class="image" style="width: 90%; height: 78%; ">
+            <span class="description">&nbsp;&nbsp;Krithiga</span>
+            <div class="overlay">
+              <div class="text">
+                <span style="font-size: 40px;">Krithiga </span> <br>
+                <span style="font-size: 20px;">Id- W2051541 | 20230037 </span><br>
+                <a href="mailto:krithiga.20230037@iit.ac.lk" style="font-size: 20px; text-decoration: none;">krithiga.20230037@iit.ac.lk</a> <br>
+                Role: Student 2 <br>
+                <span style="font-size: 18px;">Desingned and implement pages:</span><br>
+                <span style="font-size: 20px;">Hompage+template+ nav <br> Feedback</span>
+              </div>
+            </div>
+        </div>
+    
+        <!-- card3 -->
+        <div class="container-3">
+            <img src="Minindu.-1jpeg.jpeg" alt="Avatar" class="image">
+            <span class="description">&nbsp;&nbsp;Minindu</span>
+            <div class="overlay">
+              <div class="text">
+                <span style="font-size: 40px;">MININDU HIMAL</span> <br>
+                <span style="font-size: 20px;">Id- W2051531 | 20230019 </span><br>
+                <a href="mailto:minindu.20230019@iit.ac.lk" style="font-size: 20px; text-decoration: none;">minindu.20230019@iit.ac.lk</a> <br>
+                Role: Student 3 <br>
+                <span style="font-size: 20px;">Desingned and implement pages:</span><br>
+                User Profile | Team
+              </div>
+            </div>
+        </div>
+        
+        <!-- card4 -->
+        <div class="container-4">
+            <img src="Buddila.jpg" alt="Avatar" class="image" style="height: 75%; width: 90%;">
+            <span class="description">&nbsp;&nbsp;Buddila</span>
+            <div class="overlay">
+              <div class="text">
+                <span style="font-size: 40px;">Buddila <br>Ruwanpathirana</span> <br>
+                <span style="font-size: 20px;">Id- W2051555 | 20230093 </span><br>
+                <a href="mailto:buddila.20230093@iit.ac.lk" style="font-size: 20px; text-decoration: none;">buddila.20230093@iit.ac.lk</a> <br>
+                Role: Student 4 <br>
+                <span style="font-size: 20px;">Desingned and implement pages:</span><br>
+                Gallery | Sitemap
+              </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- footer -->
+    <footer>
+        <div class="rectangle4" style="width: 1528px; margin-top: 16%;"> 
+            <div class="kdiv6" style="margin-left: 740px;">
+                <ul class="footerli2" style="margin-top: -10px;" >
+                    <li class="footerli2" ><div class="kcircle"><img src="facebook.svg" class="imgsvg" alt="facebook"></div></li>
+                    <li class="footerli2" ><div class="kcircle"><img src="linkedin.svg" class="imgsvg" alt="linkedin"></div></li>
+                    <li class="footerli2" ><div class="kcircle"><img src="instagram.svg" class="imgsvg" alt="instagram"></div></li>
+                    
+                </ul>
+            </div>
+            <div class="kdiv4" style="margin-left: 500px;">
+                <ul class="footerli" style="margin-top: -20px; margin-left: 10px;">
+                    <li class="footerli"><a href="home.html#home" class="footera">Home</a></li> 
+                    <li class="footerli"><a href="gallery.html" class="footera">Gallery</a></li>
+                    <li class="footerli"><a href="shop.html" class="footera">Shop</a></li>
+                    <li class="footerli"><a href="userprofile.html" class="footera">User profile</a></li>
+                    <li class="footerli"><a href="feedback.html" class="footera">Feedback</a></li>
+                    <li class="footerli"><a href="sitemap.html" class="footera">Sitemap</a></li>
+                    <li class="footerli"><a href="team.html" class="footera">Team</a></li> 
+                </ul>
+            </div> 
+            <div class="kdiv5" style="margin-left: 600px;">
+                <ul class="footerli3" style="margin-top: -20px; margin-left: 10px;">
+                    <li class="footerli3"><a href="pageeditor_student1.html" class="editora" target="_blank">Student 1</a><li class="kborder"></li>
+                    <li class="footerli3"><a href="pageeditor_student2.html" class="editora" target="_blank">Student 2</a><li class="kborder"></li>
+                    <li class="footerli3"><a href="pageeditor_student3.html" class="editora" target="_blank">Student 3</a><li class="kborder"></li>
+                    <li class="footerli3"><a href="pageeditor_student4.html" class="editora" target="_blank">Student 4</a></li>
+                    </ul>
+                  
+            </div> 
+            <div class="kdiv7" style="width: 1523px;"> 
+                <p class="kp1"> If you think the ocean isn't important imagine earth without it.</p> 
+                <p class="kp1" style="font-size: 18px; opacity: 0.6; margin-top: -10px;"> Visit our website for more information</p>
+                
+        
+            </div> 
+        </div>
+    </footer>
+    <script> 
+    //navigation bar changing colour when user starts scrollling 
+	var lastscroll=0; 
+	window.addEventListener('scroll',function (){
+		var scrollpos = window.scrollY; 
+		if(scrollpos>100){ 
+			var color="#007ba7"  //blue colour when moving   
+		}else{
+			var color="rgba(255,255,255,0)" //transparent colour when going back 
+		}
+		lastscroll= scrollpos <= 0 ? 0 : scrollpos; //setting where last scroll position was 
+		document.getElementById('header').style.backgroundColor=color; //setting color 
+	}) 
+
+	//making active class work when clicking on link
+	document.addEventListener('DOMContentLoaded', function() { //when window loads above functions are called 
+  	setactive();
+  	setactiveurl();
+	});
+	
+	function setactive() {
+  		var links = document.querySelectorAll('nav ul li a'); //decalring all navigation bar links in array 
+  		links.forEach(function(link) {
+    		link.addEventListener('click', function() { //Listens for click event 
+      			links.forEach(function(link) {
+        			link.classList.remove('active'); //remove active class from links that doesn't have click 
+      			});
+      			this.classList.add('active'); //adding active class for the link that has been clicked 
+    		});
+  		});
+	}
+
+	//making sure that the active link stays without disappearing 
+	function setactiveurl() {
+  		var currentloc = window.location.href;
+  		var links = document.querySelectorAll('nav ul li a');
+  		links.forEach(function(link) {
+    		if (link.href === currentloc) {
+      			link.classList.add('active');
+    		}
+  		});
+	}
+
+    </script> 
+
+
+        
+
+        
+
+    
+
+    
+</body>
+</html>

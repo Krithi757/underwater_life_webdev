@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor</title>
+    <!-- css for nav bar and footer -->
+    <link rel="stylesheet" href="style.css"> 
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 280vh;
+            background-image: linear-gradient(to bottom, #2b8bec 2%, transparent 30%, #809cad),url('bg-img.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        .centered-div {
+            width: 80%;
+            margin: 0 auto;
+            position: absolute;
+            margin-top: 81%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.5); 
+            backdrop-filter: blur(10px); 
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        .teamname {
+            font-size: 60px; 
+            color: wheat;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 900; /* Replace <weight> with the desired font weight */
+            font-style: normal;
+            margin-top: 3%;
+            position: absolute;
+            margin-left: 39%;
+            
+        }
+        .txt1{
+            font-size: 30px; 
+            color: black;
+            font-family: "Montserrat", sans-serif;
+            font-style: italic;
+            margin-top: 6.7%;
+            position: absolute;
+            margin-left: 41%;
+        }
+        .txt-2{
+            font-size: 30px; 
+            color: black;
+            font-weight: 800;
+            font-family: "Montserrat", sans-serif;
+            text-align: center;
+        }
+        .info{
+            font-size: 20px; 
+            color: black;
+            font-style: normal;
+            font-family: "Montserrat", sans-serif;   
+        }
+        .img-ss {
+            width: 60%;
+            height: auto;
+            margin-top: 1%;
+            margin-left: 20%;
+        }
+        .link-page{
+            font-size: 25px; 
+            color: black;
+            font-style: normal;
+            font-family: "Montserrat", sans-serif; 
+            text-align: right; 
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .link-page:hover{
+            color: blue;
+        }
+
+       
+    </style>
+
+</head>
+<body>
+
+    <span class="teamname" style="top: -5%;">PAGE EDITOR~</span>
+    <span class="txt1"> "Page details organizer."</span>
+
+    <div class="centered-div">
+        <div class="txt-2">
+            Minindu Himal <br>
+            Role: Student 3 <br>
+            Id- W2051531 / 20230019
+            <hr style="height: 3px; background-color: lightgray;"> 
+        </div>
+
+        <div>
+            <span class="txt-2" style="text-align: left; font-size: 30px;">1.USER PROFILE</span> <br>
+            <span class="info">
+                The user is developing a user profile page that employs a progressive form approach to gather user information.
+                 This involves presenting users with a series of prompts, organized into categories such as personal details, tasks,
+                  qualifications, and others, guiding them through the profile completion process gradually. The form is designed to be concise and clear, with at least 12 prompts spread across 3 steps. 
+                  Additionally, the system provides feedback on the completion progress of the user's profile.
+            </span>
+            <img src="User-profile.png" alt="User Profile Image" class="img-ss">
+            <a href="userprofile.html" class="link-page">Go to page ></a>
+
+            <hr style="height: 3px; background-color: lightgray;"> 
+        </div>
+
+        <div>
+            <span class="txt-2" style="text-align: left; font-size: 30px;">2.TEAM MEMBER PAGE</span> <br>
+            <span class="info">
+                The team page for the website will showcase interactive thumbnails that, upon hovering, display extended details about each team member's contributions. 
+                The page aims to provide users with insights into the team members who contributed to the website's development. 
+            </span>
+            <img src="team-member.png" alt="User Profile Image" class="img-ss">
+            <a href="team.html" class="link-page">Go to page ></a>
+
+            <hr style="height: 3px; background-color: lightgray;"> 
+        </div>
+        
+        <div>
+            <span class="txt-2" style="text-align: left; font-size: 30px;">3.CONTENT PAGE-1</span> <br>
+            <span class="info">
+                The task entails developing an additional content page related to the website's theme of ocean pollution. 
+                The page should contain comprehensive information regarding the causes, effects, and potential solutions to ocean pollution. 
+            </span>
+            <img src="content-1.png" alt="User Profile Image" class="img-ss">
+            <a href="contentpage_student3.html" class="link-page">Go to page ></a>
+
+            <hr style="height: 3px; background-color: lightgray;"> 
+        </div>
+
+        <div>
+            <span class="txt-2" style="text-align: left; font-size: 30px;">4.PAGE EDITOR</span> <br>
+            <span class="info">
+                Team members create an editor's page with their name, role, and tasks. 
+                This page is distinct from the main website and allows for creativity. 
+                It includes links from and back to the team member's pages, opening in a new tab.
+            </span>
+            <img src="User-profile.png" alt="User Profile Image" class="img-ss">
+            <a href="pageeditor_student3.html" class="link-page">Go to page ></a>
+
+            <hr style="height: 3px; background-color: lightgray;"> 
+        </div>
+    </div>
+
+    
+
+
+</body>
+</html>

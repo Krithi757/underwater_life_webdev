@@ -1,0 +1,95 @@
+[ 
+    
+    {
+        "id": 1,
+        "name": "Protect the Ocean - Hoodie",
+        "price": 1950,
+        "image": "images/tshirt1.jpg"
+        
+    },
+    {
+        "id": 2,
+        "name": "Protect the Ocean - Tshirt",
+        "price": 1050,
+        "image": "images/tshirt2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Protect the Turtles - Hoodie",
+        "price": 1200,
+        "image": "images/tshirt3.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "Lobster Mug",
+        "price": 950,
+        "image": "images/mug1.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Octupus Mug",
+        "price": 950,
+        "image": "images/mug2.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Coral Mug",
+        "price": 950,
+        "image": "images/mug3.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Save the sea turtles - Sticker",
+        "price": 100,
+        "image": "images/sticker1.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Protect the Coral - Sticker",
+        "price": 100,
+        "image": "images/sticker2.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Wave - Sticker",
+        "price": 100,
+        "image": "images/sticker3.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Turtles - Notebook",
+        "price": 300,
+        "image": "images/notebook1.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Stringrays - Notebook",
+        "price": 300,
+        "image": "images/notebook2.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Sharks - Notebook",
+        "price": 300,
+        "image": "images/notebook3.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Ocean Poster",
+        "price": 220,
+        "image": "images/poster1.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Waves Poster",
+        "price": 220,
+        "image": "images/poster2.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Coast Poster",
+        "price": 220,
+        "image": "images/poster3.jpg"
+    }
+]

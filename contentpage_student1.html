@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Page</title>
+    <!-- css for nav bar and footer --> 
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arya:wght@400;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Italiana&family=Ovo&display=swap" rel="stylesheet">
+
+    <style>
+         body {
+        margin: 0;
+        padding: 0;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 5%;   
+        }
+        .image-container::before {
+            content: "Guardians of the Deep";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            margin-top: 4%;
+            font-size: 4em; 
+            font-family: "Bungee", sans-serif;
+            font-weight: 400;
+            color: white;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(89, 122, 149, 0.275)); /* White gradient to bottom */
+            z-index: 990;
+        }
+        .image-container::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; 
+            background: linear-gradient(to top, rgba(74, 85, 100, 0.098), rgba(46, 81, 109, 0.683)); /* Transparent gradient to top */
+            z-index: 1;
+        }
+
+        .subtext {
+            text-align: center;
+            font-size: 3em; 
+            color: #f2eeee;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        .details-container {
+            margin-top: -10px;
+            background: linear-gradient(to top, #516eb2, #182848c3); /* Blue gradient to top */
+            padding: 20px;
+            color: white;
+        }
+
+        .details {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .details p{
+            font-size: 30px;
+        }
+        .image-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .image-wrapper img {
+            width: 400px;
+            
+            margin: 0 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+     <!-- Navigation -->
+     <header id="header" style="z-index: 999; background-color: hsla(210, 34%, 59%, 0.494);">  
+		<div>
+		<nav class="homenavul homenav"> 
+			<ul class="homeli homenavul"> 
+				<li class="golefft homeli"><a href="home.html#home" class="homea">Home</a></li> 
+				<li class="homeli"><a href="gallery.html" class="homea">Gallery</a></li> 
+				<li class="homeli"><a href="shop.html" class="homea">Shop</a></li>
+				<li class="homeli"><a href="userprofile.html" class="homea">User Profile</a></li> 
+				<li><img class="logo" src="logo.png" alt="logo"> </li>
+				<li class="goleft homeli"><a href="feedback.html" class="homea">Feedback</a></li>
+				<li class="homeli"><a href="sitemap.html" class="homea">Sitemap</a></li> 
+				<li class="homeli"><a href="team.html" class="homea">Team</a></li> 
+			</ul>
+		</nav> 
+	</div> 
+	</header>
+
+    <!-- content -->
+    <div class="image-container">
+		<img src="Turtle .jpeg" alt="Plastic seas" style="width: 100%;">
+	</div>
+    <div class="details-container">
+        <div class="details">
+            <span class="subtext">"Safeguarding Endangered Sea Creatures from Oceanic Perils"</span>
+            <p>"Safeguarding Endangered Sea Creatures from Oceanic Perils" focuses on protecting marine life threatened by the detrimental effects of ocean pollution.
+                 This initiative aims to raise awareness about the impact of pollution on endangered sea creatures and promote conservation efforts to preserve their habitats. 
+                 By highlighting the urgent need for action, this project inspires individuals and communities to take proactive measures to reduce pollution and protect these vulnerable species. </p>
+                 
+                 <span class="subtext">" Who are Endangered Sea animals ?"</span>
+                 <p>
+                    Endangered sea animals include species such as sea turtles, whales, dolphins, manatees, seals, and various species of fish and sharks. 
+                    These animals face threats from habitat destruction, overfishing, climate change, and pollution. <br><br>
+                    Several rare endangered sea animals are on the brink of extinction due to various threats.
+                     The Vaquita, a small porpoise species found in the Gulf of California, is critically endangered, with less than 10 individuals remaining.
+                      The North Atlantic Right Whale, with only a few hundred individuals left, faces threats from ship strikes and entanglement in fishing gear. 
+                 </p>
+
+                 <div class="image-wrapper">
+                    <img src="Seal.jpeg" alt="Seal">
+                    <img src="White-shark.jpeg" alt="White shark">
+                    <img src="Sea-otter.jpeg" alt="Sea-otter">
+                </div>
+
+                <br>
+                <span class="subtext">" Effects on ocean pollution "</span>
+                <p>
+                    Ocean pollution, including plastic waste, chemical pollutants, and oil spills, has a devastating impact on endangered sea animals. 
+                    Plastic waste can be mistaken for food by marine animals, leading to ingestion and entanglement. 
+                    Chemical pollutants can disrupt hormone levels and reproductive systems, affecting population growth. Oil spills can coat animals' fur or feathers, leading to hypothermia, suffocation, and poisoning.
+                </p>
+
+                <div class="image-wrapper">
+                    <img src="Turtle-net.jpeg" alt="Turtle strugle becauese of a net">
+                    <img src="seal-ring.jpeg" alt="seal got pplastic ring in head">
+                    <img src="chemical-water.jpeg" alt="dump chemiacal into water">
+                </div>
+
+                <span class="subtext">" How to prevent this? "</span>
+                <p>
+                    To prevent harm to endangered sea animals, it is crucial to reduce plastic waste by using alternatives, recycling, and proper waste disposal. 
+                    Efforts should be made to reduce chemical pollutants entering the ocean through better waste management and regulation. 
+                    Additionally, stricter regulations on shipping and oil drilling can help prevent oil spills. Conservation efforts, such as habitat protection and restoration, and promoting sustainable fishing practices, are also essential in protecting these vulnerable species. <br><br>
+
+                    To further protect endangered sea animals, it's vital to address overfishing by promoting sustainable fishing practices and implementing stricter regulations. 
+                    Marine protected areas can provide safe habitats for these species to thrive. 
+                    Educating the public about the importance of marine conservation and the impacts of their actions on marine life can also foster a sense of responsibility and encourage sustainable behavior.
+                </p>
+        </div>
+    </div>
+
+     <!-- footer -->
+     <div class="rectangle4" style="width: auto; margin-top: 0;"> 
+        <div class="kdiv6" style="margin-left: 740px;">
+            <ul class="footerli2" style="margin-top: -10px;" >
+                <li class="footerli2" ><div class="kcircle"><img src="facebook.svg" class="imgsvg" alt="facebook"></div></li>
+                <li class="footerli2" ><div class="kcircle"><img src="linkedin.svg" class="imgsvg" alt="linkedin"></div></li>
+                <li class="footerli2" ><div class="kcircle"><img src="instagram.svg" class="imgsvg" alt="instagram"></div></li>
+                
+            </ul>
+        </div>
+        <div class="kdiv4" style="margin-left: 500px;">
+            <ul class="footerli" style="margin-top: -20px; margin-left: 10px;">
+                <li class="footerli"><a href="home.html#home" class="footera">Home</a></li> 
+            <li class="footerli"><a href="gallery.html" class="footera">Gallery</a></li>
+            <li class="footerli"><a href="shop.html" class="footera">Shop</a></li>
+            <li class="footerli"><a href="userprofile.html" class="footera">User profile</a></li>
+            <li class="footerli"><a href="feedback.html" class="footera">Feedback</a></li>
+            <li class="footerli"><a href="sitemap.html" class="footera">Sitemap</a></li>
+            <li class="footerli"><a href="team.html" class="footera">Team</a></li> 
+            </ul>
+        </div> 
+        <div class="kdiv5" style="margin-left: 600px;">
+            <ul class="footerli3" style="margin-top: -20px; margin-left: 10px;">
+                <li class="footerli3"><a href="pageeditor_student1.html" class="editora" target="_blank">Student 1</a><li class="kborder"></li>
+                <li class="footerli3"><a href="pageeditor_student2.html" class="editora" target="_blank">Student 2</a><li class="kborder"></li>
+                <li class="footerli3"><a href="pageeditor_student3.html" class="editora" target="_blank">Student 3</a><li class="kborder"></li>
+                <li class="footerli3"><a href="pageeditor_student4.html" class="editora" target="_blank">Student 4</a></li>
+                </ul>
+              
+        </div> 
+        <div class="kdiv7" style="width: 1521px;"> 
+            <p class="kp1"> If you think the ocean isn't important imagine earth without it.</p> 
+            <p class="kp1" style="font-size: 18px; opacity: 0.6; margin-top: -10px;"> Visit our website for more information</p>
+            
+    
+        </div> 
+    </div> 
+</body>
+</html>
